@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="mainContainer">
+      <div id="header">
+        <h3>Password Generator</h3>
+      </div>
+
+      <div id="interface">
+        <div id="output">output</div>
+
+        <button type="button" class="button2" onclick="kopieren()">
+          Kopieren
+        </button>
+
+        <label class="container"
+          >Anzahl Zeichen (max. 64)
+          <input
+            type="number"
+            id="anzahlZeichen"
+            class="text"
+            min="0"
+            max="64"
+          /> </label
+        ><br />
+
+        <label class="container"
+          >Grossbuchstaben
+          <input
+            type="checkbox"
+            id="grossbuchstaben"
+            class="checkbox"
+            checked="checked"
+          /> </label
+        ><br />
+
+        <label class="container"
+          >Kleinbuchstaben
+          <input
+            type="checkbox"
+            id="kleinbuchstaben"
+            class="checkbox"
+            checked="checked"
+          /> </label
+        ><br />
+
+        <label class="container"
+          >Zahlen
+          <input type="checkbox" id="zahlen" class="checkbox" /> </label
+        ><br />
+
+        <label class="container"
+          >Sonderzeichen
+          <input type="checkbox" id="sonderzeichen" class="checkbox" /> </label
+        ><br />
+
+        <button type="button" class="button" onclick="generieren()">
+          Passwort generieren
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

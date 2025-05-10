@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  --background: #ffe6a5;
+  --interface: #ffbf61;
+  --color: rgb(32, 32, 32);
+  --hover: #605678;
+  
+}
+
+body {
+  --color: rgb(32, 32, 32);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--background),
+    var(--interface)
+  );
+  background-attachment: fixed;
+  color: var(--color);
+}
+
+#mainContainer {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#header {
+  grid-column: 2;
+  grid-row: 1;
+
+  margin-top: 60px;
+  font-size: 2.7em;
+  text-align: center;
+
+  text-shadow: 8px 8px 15px var(--hover);
+}
+
+#interface {
+  grid-column: 2;
+  grid-row: 2;
+
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 11px;
+
+  font-size: larger;
+
+  background-color: var(--interface);
+
+  display: flex;
+  flex-direction: column;
+}
+
+#interface input {
+  float: right;
+}
+
+#output {
+  font-size: 35px;
+  background-color: var(--hover);
+  color: white;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.text {
+  max-width: 55px;
+  padding: 0px;
+  font-size: large;
+  text-align: center;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  accent-color: var(--hover);
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.button {
+  font-size: 20px;
+  background-color: var(--hover);
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  border-style: none;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button2 {
+  font-size: 20px;
+  background-color: var(--hover);
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  border-style: none;
+  max-width: 100px;
+  display: flex;
+  align-self: center;
+  margin-bottom: 25px;
+}
+
+.button2:hover {
+  background-color: lightgreen;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
